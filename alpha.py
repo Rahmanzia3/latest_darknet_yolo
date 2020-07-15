@@ -274,9 +274,9 @@ if __name__ == "__main__":
     parser.add_argument("--project", required=True, help="Give project name")
     parser.add_argument("--batch_size", default = 16, help="Give batch size")
     parser.add_argument("--sub_batch", default =  16, help="Give batch step size")
-    parser.add_argument("--epochs", default =  101, help="Give MAX_Iterations Size here")
+    parser.add_argument("--epochs", default =  2000, help="Give MAX_Iterations Size here")
     parser.add_argument("--data_source", required = True, help='Provide url or google Id or path(dir)')
-    parser.add_argument("--backup_weight", default = 'True', help='To use lase weights Enable it or give weight name')
+    parser.add_argument("--backup_weight", default = 'False', help='To use lase weights Enable it or give weight name')
 
 
     opt = parser.parse_args()
