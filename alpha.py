@@ -390,7 +390,7 @@ if __name__ == "__main__":
         return pre_weights_path
     pre_weights_path = use_weights(project_dir,pre_weights_path)
     
-    run = './darknet detector train '+str(obj_data_directory)+' '+str(destination_cfg_dir)+' '+str(pre_weights_path)
+    run = './darknet detector train '+str(obj_data_directory)+' '+str(destination_cfg_dir)+' '+str(pre_weights_path) +' -dont_show'
     print('############################')
     print(run)
     print('############################')
