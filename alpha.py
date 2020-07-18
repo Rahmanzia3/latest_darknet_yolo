@@ -412,8 +412,11 @@ if __name__ == "__main__":
 
         if iteration_line != -1:
             try:
-                send_tele_image(all_op,'chart.png')
-                print('SEND PIC AND TEXT',all_op)
+                # Send Image on Every 300 Iterations
+                iteration_count = all_op.split(':')[0]
+                if int(iteration_count) % 300 ==0 :
+                    send_tele_image(all_op,'chart.png')
+                    print('SEND PIC AND TEXT',all_op)
             except:
                 pass
             count_iteration = all_op.split(':')[0]
